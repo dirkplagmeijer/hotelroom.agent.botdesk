@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org",
+  "$id": "https://botdesk.eth",
+  "title": "BotDesk Hospitality M2M Taxonomy Schema",
+  "description": "Standardized 7-step machine-to-machine data model for autonomous hotel and room bookings.",
+  "type": "object",
+  "required": [
+    "protocol_version",
+    "booking_id",
+    "hotel_identity",
+    "stay_parameters",
+    "room_specification",
+    "pricing_and_terms",
+    "settlement_authorization"
+  ],
+  "properties": {
+    "protocol_version": {
+      "type": "string",
+      "default": "1.0.0"
+    },
+    "booking_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "agent_governance": {
+      "type": "object",
+      "description": "Mapped to agentconsent.eth and agentallowance.eth",
+      "properties": {
+        "consent_proof_hash": { "type": "string" },
+        "max_allowance_amount": { "type": "number" },
+        "currency": { "type": "string", "default": "USDC" }
+      }
+    },
+    "hotel_identity": {
+      "type": "object",
+      "description": "Mapped to hotelidentity.eth and hotelverification.eth",
+      "required": ["hotel_did", "name", "location"],
+      "properties": {
+        "hotel_did": { "type": "string" },
+        "verified_status": { "type": "boolean" },
+        "name": { "type": "string" },
+        "location": {
+          "type": "object",
+          "properties": {
+            "address": { "type": "string" },
+            "city": { "type": "string" },
+            "country_code": { "type": "string" },
+            "latitude": { "type": "number" },
+            "longitude": { "type": "number" }
+          }
+        }
+      }
+    },
+    "stay_parameters": {
+      "type": "object",
+      "description": "Query parameters passed to roomavailability.eth and bookingquote.eth",
+      "required": ["check_in_date", "check_out_date", "guest_count"],
+      "properties": {
+        "check_in_date": { "type": "string", "format": "date" },
+        "check_out_date": { "type": "string", "format": "date" },
+        "stay_duration_nights": { "type": "integer", "minimum": 1 },
+        "guest_count": {
+          "type": "object",
+          "properties": {
+            "adults": { "type": "integer", "minimum": 1 },
+            "children": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "room_count": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "room_specification": {
+      "type": "object",
+      "description": "Mapped to roomtype.eth, roomfeature.eth, hotelamenity.eth and roomaddon.eth",
+      "properties": {
+        "room_type": { "type": "string" },
+        "max_capacity": { "type": "integer" },
+        "bed_type": { "type": "string" },
+        "view": { "type": "string" },
+        "accessibility": { "type": "boolean" },
+        "meal_plan": {
+          "type": "string",
+          "enum": ["room_only", "bed_and_breakfast", "half_board", "full_board", "all_inclusive"]
+        },
+        "hotel_amenities": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "room_addons": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "pricing_and_terms": {
+      "type": "object",
+      "description": "Mapped to roomrate.eth, bookingquote.eth, citytax.eth and cancellationterms.eth",
+      "required": ["total_amount", "currency", "cancellation_terms"],
+      "properties": {
+        "base_room_rate": { "type": "number" },
+        "city_tax": { "type": "number" },
+        "tourist_tax": { "type": "number" },
+        "total_amount": { "type": "number" },
+        "currency": { "type": "string" },
+        "quote_expiration": { "type": "string", "format": "date-time" },
+        "cancellation_terms": {
+          "type": "object",
+          "properties": {
+            "refundable": { "type": "boolean" },
+            "free_cancellation_until": { "type": "string", "format": "date-time" },
+            "penalty_percentage": { "type": "number" }
+          }
+        }
+      }
+    },
+    "guest_verification": {
+      "type": "object",
+      "description": "Mapped to guestidentity.eth and guestverification.eth (Zero-Knowledge Proof)",
+      "properties": {
+        "guest_did": { "type": "string" },
+        "zkp_identity_verified": { "type": "boolean" }
+      }
+    },
+    "settlement_authorization": {
+      "type": "object",
+      "description": "Proprietary Settlement & Escrow Gate (bookingescrow.eth, paymentescrow.eth, bookingpayment.eth)",
+      "required": ["settlement_token", "escrow_status"],
+      "properties": {
+        "settlement_token": {
+          "type": "string",
+          "description": "Certified token issued by the proprietary BotDesk settlement module."
+        },
+        "escrow_status": {
+          "type": "string",
+          "enum": ["pending", "escrow_locked", "released_at_checkin", "refunded", "disputed"]
+        },
+        "booking_status": {
+          "type": "string",
+          "enum": ["locked", "confirmed", "checked_in", "checked_out", "cancelled"]
+        }
+      }
+    }
+  }
+}
