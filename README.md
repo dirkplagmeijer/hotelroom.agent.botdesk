@@ -10,8 +10,8 @@ BotDesk Hospitality introduces a cross-chain, open-source hotel and booking data
 
 ### 🌐 Live Web2.5 Discovery & A2A Gateway Endpoints
 * **Official A2A Discovery Manifest:** `https://agentbotdesk.com`
-* **JSON-RPC 2.0 Agent Endpoint:** `POST https://hotelroom.agentbotdesk.com`
-* **Lightweight ENS Route Resolver:** `GET https://hotelroom.agentbotdesk.com/route?category=hotelroom&step=1`
+* **JSON-RPC 2.0 Agent Endpoint:** `POST` https://agentbotdesk.com
+* **Lightweight ENS Route Resolver:** `GET` https://agentbotdesk.com/route?category=hotelroom&step=1
 
 ---
 
