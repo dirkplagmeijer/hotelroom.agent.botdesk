@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org",
+  "$id": "https://agentbotdesk.com",
+  "title": "BotDesk Hotelroom M2M Taxonomy Schema",
+  "description": "Deterministic 7-step Web2.5 routing and settlement schema for autonomous hotel and room bookings.",
+  "type": "object",
+  "required": ["protocol", "step", "ens_endpoint", "payload"],
+  "properties": {
+    "protocol": {
+      "type": "string",
+      "const": "botdesk-web25-hotelroom-v1"
+    },
+    "step": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 7,
+      "description": "Lifecycle step (1: Discovery, 2: Rates & Taxes, 3: Verification, 4: Escrow Booking, 5: Check-In & Key, 6: Check-Out, 7: Disputes & Reviews)"
+    },
+    "ens_endpoint": {
+      "type": "string",
+      "pattern": "^[a-z0-9.-]+\\.eth$",
+      "examples": ["hotelsearch.eth", "roomrate.eth", "guestverification.eth", "roombooking.eth", "roomkey.eth", "hotelcheckout.eth", "bookingdispute.eth"]
+    },
+    "settlement_token": {
+      "type": "string",
+      "description": "Required certified token from the proprietary settlement module for binding step 4+ reservations."
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "hotel_id": { "type": "string" },
+        "room_type": { "type": "string" },
+        "check_in_date": { "type": "string", "format": "date" },
+        "check_out_date": { "type": "string", "format": "date" },
+        "guests": { "type": "integer", "minimum": 1 },
+        "currency": { "type": "string", "default": "EUR" },
+        "total_amount": { "type": "number", "minimum": 0 },
+        "city_tax_included": { "type": "boolean" },
+        "zkp_guest_proof": { "type": "string" }
+      }
+    }
+  }
+}
