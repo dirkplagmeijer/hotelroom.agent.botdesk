@@ -1,46 +1,24 @@
 {
-  "name": "BotDesk Hospitality M2M Agent Gateway",
-  "description": "Hybrid Web2.5 discovery and routing gateway connecting autonomous AI travel agents to standardized hotel and room booking ENS endpoints.",
+  "name": "BotDesk Hotelroom Gateway",
+  "description": "Platform-neutral Web2.5 M2M routing gateway & ENS taxonomy for autonomous hotel and room bookings (Google A2A compatible).",
+  "url": "https://agentbotdesk.com",
   "version": "1.0.0",
-  "protocol": "A2A",
   "provider": {
-    "organization": "BotDesk",
-    "url": "https://github.com",
-    "contact": "https://linkedin.com"
+    "organization": "BotDesk Hospitality",
+    "url": "https://github.com"
   },
-  "supportedInterfaces": [
-    {
-      "url": "https://workers.dev",
-      "protocolBinding": "JSONRPC",
-      "protocolVersion": "1.0"
-    }
-  ],
   "capabilities": {
     "streaming": false,
-    "pushNotifications": true,
-    "stateTransitionHistory": true
+    "pushNotifications": false
   },
-  "defaultInputModes": ["application/json"],
-  "defaultOutputModes": ["application/json"],
+  "defaultInputModes": ["text/plain", "application/json"],
+  "defaultOutputModes": ["text/plain", "application/json"],
   "skills": [
     {
-      "id": "hotelroom-discovery-ari",
-      "name": "Hotel Discovery & Real-Time ARI Lookup",
-      "description": "Scans verified hotel identities (hotelsearch.eth, hotelidentity.eth), room availability (roomavailability.eth), specifications (roomtype.eth, roomfeature.eth, hotelamenity.eth), and binding rates (roomrate.eth, bookingquote.eth, citytax.eth).",
-      "tags": ["hospitality", "hotel", "ari", "ens", "m2m"]
-    },
-    {
-      "id": "hotelroom-verification-policy",
-      "name": "Guest ZKP Verification & Cancellation Terms",
-      "description": "Validates privacy-preserving guest credentials (guestidentity.eth, guestverification.eth), hotel authenticity (hotelverification.eth), and binding cancellation terms (cancellationterms.eth, hotelpolicy.eth).",
-      "tags": ["did", "zkp", "verification", "policy"]
-    },
-    {
-      "id": "hotelroom-escrow-lifecycle",
-      "name": "Autonomous Booking, Escrow & Stay Execution",
-      "description": "Executes inventory locks (bookinglock.eth), escrow-backed reservations (makereservation.eth, bookingescrow.eth, paymentescrow.eth), check-in/out access (hotelcheckin.eth, roomcheckin.eth, roomaccess.eth, hotelcheckout.eth), and dispute resolution (bookingdispute.eth). Requires a certified settlement_token.",
-      "tags": ["escrow", "booking", "checkin", "settlement"]
+      "id": "hotelroom-7step-routing",
+      "name": "7-Step Deterministic Hotelroom ENS Routing",
+      "description": "Resolves discovery (hotelsearch.eth), rates & taxes (roomrate.eth, citytax.eth), ZKP guest verification (guestverification.eth), escrow booking (roombooking.eth), digital keys (roomkey.eth), checkout (hotelcheckout.eth), and disputes (bookingdispute.eth).",
+      "tags": ["a2a", "ai-agents", "ens", "hotel-booking", "hospitality", "m2m", "web2.5"]
     }
   ]
 }
-
