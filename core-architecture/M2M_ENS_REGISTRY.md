@@ -1,5 +1,5 @@
 # M2M ENS Registry — Hotelroom (`hotelroom.agent.botdesk`)
-### The Definitive On-Chain Routing Directory for Hospitality & Autonomous Room Bookings
+### The Definitive On-Chain Routing Directory for Hospitality & Agentic Room Bookings
 
 #### Core Protocol & Shared Agent Layer (Universal)
 * **Protocol Root:** `botdesk.eth`
