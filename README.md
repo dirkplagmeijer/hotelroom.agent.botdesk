@@ -1,15 +1,9 @@
 ### hotelroom.agent.botdesk
 ## The Web2.5 M2M Routing Layer enabling AI-Agents to Search for and Book Hotel Rooms & Hospitality Stays.
 
-
 ---
 
-**AgentBotDesk Hospitality** connects hotel operators, boutique accommodations, and Property Management Systems (PMS) directly to AI-agents. Through a standardized 7-step ENS taxonomy and Web2.5 bridge gateway, agents access real-time room availability, request binding rate quotes, and execute instant bookings with deposit escrow.
-
-
----
-
----
+**AgentBotDesk Hotelroom Hospitality** connects hotel operators, boutique accommodations, and Property Management Systems (PMS) directly to AI-agents. Through a standardized 7-step ENS taxonomy and Web2.5 bridge gateway, agents access real-time room availability, request binding rate quotes, and execute instant bookings with deposit escrow.
 
 ---
 
@@ -17,7 +11,7 @@
 Anticipating a major transformation in hotel bookings, driven by critical market forces:
 * **Global Big Tech race to build AI personal travel agents**
 * **Reduced commission pressure:** Hoteliers and accommodation owners seek direct, low-commission bookings
-* **Dynamic room & rate utilization:** Operators aim to maximize room occupancy 
+* **Dynamic room & rate utilization:** Operators aim to maximize room occupancy
 * **Unified open M2M standards:** AI travel assistants deployed by Big Tech require standardized endpoints
 
 **AgentBotDesk Hotelroom Hospitality** introduces a cross-chain, highly efficient hotel and room booking taxonomy that provides the definitive open-source framework upon which Web3 and hospitality developers can openly build and deploy their validated endpoints.
@@ -26,17 +20,14 @@ We offer a Web2.5 bridge gateway for AI-agents on which a fully automated, machi
 
 I am a commercial entrepreneur with a clear vision and focus, inviting Web3 developers, ecosystem architects, hotel operators, and business developers to build, cooperate, and integrate the Web3 data layer for hotel rooms and hospitality stays under the `hotelroom.agent.botdesk` architecture.
 
-
 📩 Visit [LinkedIn](https://linkedin.com) or contact **`hotelroom@agentbotdesk.com`** to connect and explore strategic cooperation or integration opportunities.
-
-
 
 ---
 
-### 🌐 Live Bridge Web2.5 Discovery & A2A Gateway Endpoints
+### 🌐 Live Web2.5 Bridge Discovery & A2A Gateway Endpoints
 * **Official A2A Discovery Manifest:** `GET https://agentbotdesk.com`
-* **JSON-RPC 2.0 Agent Endpoint:** `POST https://agentbotdesk.com`
-* **Lightweight ENS Route Resolver:** `GET https://agentbotdesk.com/route?category=hotelroom&step=1`
+* **JSON-RPC 2.0 Agent Endpoint:** `POST https://hotelroom.agentbotdesk.com`
+* **Lightweight ENS Route Resolver:** `GET https://hotelroom.agentbotdesk.com/route?category=hotelroom&step=1`
 
 ---
 
@@ -54,14 +45,13 @@ I am a commercial entrepreneur with a clear vision and focus, inviting Web3 deve
 3. **Verification & Policy:** Validates guest identity via Zero-Knowledge Proofs (ZKP) and hotel cancellation terms (`guestidentity.eth`, `guestverification.eth`, `hotelpolicy.eth`).
 4. **Booking, Escrow & Payment:** Executes binding reservations and locks deposits via proprietary settlement tokens (`roombooking.eth`, `bookingescrow.eth`).
 5. **Check-In & Room Access:** Handles digital check-in and mobile/digital room access (`hotelcheckin.eth`, `roomaccess.eth`).
-
 6. **Check-Out & Final Settlement:** Completes the stay and releases escrow upon verified check-out (`hotelcheckout.eth`, `roomcheckout.eth`).
 7. **Modifications, Disputes & Reputation:** Manages stay changes, cancellations, refunds, and verified guest reviews (`bookingmodification.eth`, `hotelreview.eth`).
 
 ---
 
 ### 🛠️ Technical Roadmap & Licensing
-* **Phase 1:** Core logical frameworks, 7-step taxonomy, and Bridge Web2.5 A2A Discovery Gateway finalized.
+* **Phase 1:** Core logical frameworks, 7-step taxonomy, and Web2.5 Bridge A2A Discovery Gateway finalized.
 * **Phase 2:** Compiling datasets into an OpenAPI 3.0 Specification (`openapi.yaml`).
 * **Phase 3:** Connecting hotel PMS and channel manager systems to the deterministic M2M routing layer.
 * **License:** Open-source under the MIT License. Note that the core Payment and Escrow Smart Contract Module is proprietary and requires a verified cooperation and certified `settlement_token`. Inquiries via [LinkedIn](https://linkedin.com) or **`hotelroom@agentbotdesk.com`**.
@@ -71,11 +61,9 @@ I am a commercial entrepreneur with a clear vision and focus, inviting Web3 deve
 ### 🚀 AgentBotDesk Ecosystem Verticals
 * 🚕 **[Passenger Mobility (`mobility.agent.botdesk`)](https://github.com)** — 7-step deterministic M2M routing for agentic Robotaxi rides and Rental fleets (`roboride.eth`, `carrental.eth`).
 * 🏨 **Hotel Room Hospitality (`hotelroom.agent.botdesk`)** — Enabling AI-agents to search rooms, lock real-time rates, verify guests, and settle bookings (`hotelsearch.eth`, `roombooking.eth`).
-
 * 🚤 **[Canal Cruises (`canalcruise.agent.botdesk`)](https://github.com)** — Direct M2M availability, ticketing, and settlement for urban boat tours and private cruises (`canalcruise.eth`, `boatticket.eth`).
 
 ---
 
 **Focus & Architecture Keywords:**  
 `AgentBotDesk` • `Agentic AI` • `Web2.5` • `Google A2A` • `Model Context Protocol (MCP)` • `Hotel Booking Protocol` • `PMS Integration` • `M2M Routing` • `ENS Registry` • `Zero-Knowledge Proofs (ZKP)` • `Smart Escrow`
-
