@@ -1,24 +1,23 @@
+# hotelroom.agent.botdesk
+### The Web2.5 Layer for AI-Agents in Agentic Hotel & Room Bookings
 
-#### hotelroom.agent.botdesk
-## The Web2.5 Layer for AI-Agents in Autonomous Hotel & Room Bookings
-
-BotDesk Hospitality introduces a cross-chain, open-source hotel and booking data architecture for AI-agents and Property Management Systems (PMS). It bridges traditional Web2 hotel systems with automated machine-to-machine (M2M) transaction rails.
+**AgentBotDesk Hospitality** introduces a cross-chain, open-source hotel and booking data architecture for AI-agents and Property Management Systems (PMS). It bridges traditional Web2 hotel systems with automated machine-to-machine (M2M) transaction rails.
 
 📩 Reach out via [LinkedIn](https://linkedin.com) or **`hotelroom@agentbotdesk.com`** for partnerships or integrations.
 
 ---
 
 ### 🌐 Live Web2.5 Discovery & A2A Gateway Endpoints
-* **Official A2A Discovery Manifest:** `https://agentbotdesk.com`
-* **JSON-RPC 2.0 Agent Endpoint:** `POST` https://agentbotdesk.com
-* **Lightweight ENS Route Resolver:** `GET` https://agentbotdesk.com/route?category=hotelroom&step=1
+* **Official A2A Discovery Manifest:** `GET https://agentbotdesk.com`
+* **JSON-RPC 2.0 Agent Endpoint:** `POST https://hotelroom.agentbotdesk.com`
+* **Lightweight ENS Route Resolver:** `GET https://hotelroom.agentbotdesk.com/route?category=hotelroom&step=1`
 
 ---
 
 ### 🔄 Phased Web2-to-Web3 Adoption
-1. **Phase 1 (Web2 / Web2.5 Bridge):** Direct connection via HTTPS and JSON-RPC for existing PMS systems and AI-agents such as Google A2A and MCP.
-2. **Phase 2 (Deterministic M2M Routing):** Standardized 7-step execution to prevent scraping and booking errors.
-3. **Phase 3 (Full On-Chain Settlement):** Transition to `.eth` endpoints, Zero-Knowledge guest verification (ZKP), and smart-contract escrow.
+* **Phase 1 (Web2 / Web2.5 Bridge):** Direct connection via HTTPS and JSON-RPC for existing PMS systems and AI-agents such as Google A2A and MCP.
+* **Phase 2 (Deterministic M2M Routing):** Standardized 7-step execution to prevent scraping and booking errors.
+* **Phase 3 (Full On-Chain Settlement):** Transition to `.eth` endpoints, Zero-Knowledge guest verification (ZKP), and smart-contract escrow.
 
 ---
 
@@ -34,3 +33,16 @@ This repository contains modules for `/core-architecture`, `/schemas`, `/sdk`, a
 7. **Modifications, Disputes & Reputation:** `bookingmodification.eth`, `hotelreview.eth`
 
 *(See the full technical roadmap, open-source MIT license terms, and details regarding the proprietary settlement module within the repository).*
+
+---
+
+### 🚀 AgentBotDesk Ecosystem Verticals
+* 🚕 **[Passenger Mobility (`mobility.agent.botdesk`)](https://github.com)** — 7-step deterministic M2M routing for agentic Robotaxi rides and Rental fleets (`roboride.eth`, `carrental.eth`).
+* 🏨 **Hotel Room Hospitality (`hotelroom.agent.botdesk`)** — Agentic room discovery, binding rate quotes, ZKP guest verification, and deposit escrow (`hotelsearch.eth`, `roombooking.eth`).
+* 🚤 **[Canal Cruises (`canalcruise.agent.botdesk`)](https://github.com)** — Direct M2M availability, ticketing, and settlement for urban boat tours and private charters (`canalcruise.eth`, `boatticket.eth`).
+
+---
+
+**Focus & Architecture Keywords:**  
+`AgentBotDesk` • `Agentic AI` • `Web2.5` • `Google A2A` • `Model Context Protocol (MCP)` • `Hotel Booking Protocol` • `PMS Integration` • `M2M Routing` • `ENS Registry` • `Zero-Knowledge Proofs (ZKP)` • `Smart Escrow`
+
