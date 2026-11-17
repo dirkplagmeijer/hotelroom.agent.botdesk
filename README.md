@@ -16,7 +16,7 @@ Anticipating a major transformation in hotel bookings, driven by critical market
 
 * **Global Big Tech race to build AI personal travel agents**
 * **Reduced commission pressure:** Hoteliers and accommodation owners seek direct, low-commission bookings
-* **Dynamic room & rate utilization:** Operators maximize room occupancy and direct ancillary upsells
+* **Dynamic room & rate utilization:** 
 * **Unified open M2M standards:** AI travel assistants deployed by Big Tech require standardized endpoints
 
 **AgentBotDesk Hospitality** introduces a cross-chain, highly efficient hotel and room booking taxonomy that provides the definitive open-source framework upon which Web3 and hospitality developers can openly build and deploy their validated endpoints.
