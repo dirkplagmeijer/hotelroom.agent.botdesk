@@ -2,7 +2,7 @@ import urllib.request
 import json
 
 class BotDeskHotelroomClient:
-    def __init__(self, endpoint="https://agentbotdesk.com", settlement_token=None, sandbox=True):
+    def __init__(self, endpoint="https://hotelroom.agentbotdesk.com", settlement_token=None, sandbox=True):
         self.endpoint = endpoint.rstrip("/")
         self.settlement_token = settlement_token
         self.sandbox = sandbox
