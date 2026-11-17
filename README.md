@@ -12,7 +12,8 @@
 ---
 
 ### 🏨 Market Transformation & Vision
-Anticipating a major transformation in hotel distribution and guest stays, driven by critical market forces:
+Anticipating a major transformation in hotel bookings, driven by critical market forces:
+
 * **Global Big Tech race to build AI personal travel agents**
 * **Reduced commission pressure:** Hoteliers and accommodation owners seek direct, low-commission bookings
 * **Dynamic room & rate utilization:** Operators maximize room occupancy and direct ancillary upsells
