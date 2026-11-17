@@ -17,7 +17,7 @@
     {
       "id": "hotelroom-7step-routing",
       "name": "7-Step Deterministic Hotelroom ENS Routing",
-      "description": "Resolves discovery (hotelsearch.eth), rates & taxes (roomrate.eth, citytax.eth), ZKP guest verification (guestverification.eth), escrow booking (roombooking.eth), digital keys (roomkey.eth), checkout (hotelcheckout.eth), and disputes (bookingdispute.eth).",
+      "description": "Resolves discovery (hotelsearch.eth), rates & taxes (roomrate.eth, citytax.eth), ZKP guest verification (guestverification.eth), escrow booking (roombooking.eth), digital access (hotelcheckin.eth, roomaccess.eth), checkout (hotelcheckout.eth), and disputes (bookingdispute.eth).",
       "tags": ["a2a", "ai-agents", "ens", "hotel-booking", "hospitality", "m2m", "web2.5"]
     }
   ]
