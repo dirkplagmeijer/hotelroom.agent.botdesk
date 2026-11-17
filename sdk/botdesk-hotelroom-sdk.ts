@@ -10,7 +10,7 @@ export class BotDeskHotelroomClient {
   private sandbox: boolean;
 
   constructor(options: HotelroomClientOptions = {}) {
-    this.endpoint = (options.endpoint || "https://agentbotdesk.com").replace(/\/$/, "");
+    this.endpoint = (options.endpoint || "https://hotelroom.agentbotdesk.com").replace(/\/$/, "");
     this.settlementToken = options.settlementToken;
     this.sandbox = options.sandbox ?? true;
   }
