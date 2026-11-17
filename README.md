@@ -53,7 +53,8 @@ I am a commercial entrepreneur with a clear vision and focus, inviting Web3 deve
 2. **Rates, Quotes & Taxation:** Queries real-time binding room rates and local city/tourist taxes (`roomrate.eth`, `bookingquote.eth`, `citytax.eth`, `touristtax.eth`).
 3. **Verification & Policy:** Validates guest identity via Zero-Knowledge Proofs (ZKP) and hotel cancellation terms (`guestidentity.eth`, `guestverification.eth`, `hotelpolicy.eth`).
 4. **Booking, Escrow & Payment:** Executes binding reservations and locks deposits via proprietary settlement tokens (`roombooking.eth`, `bookingescrow.eth`).
-5. **Check-In & Room Access:** Handles digital check-in and mobile/digital room key issuance (`hotelcheckin.eth`, `roomaccess.eth`, `roomkey.eth`).
+5. **Check-In & Room Access:** Handles digital check-in and mobile/digital room access (`hotelcheckin.eth`, `roomaccess.eth`).
+
 6. **Check-Out & Final Settlement:** Completes the stay and releases escrow upon verified check-out (`hotelcheckout.eth`, `roomcheckout.eth`).
 7. **Modifications, Disputes & Reputation:** Manages stay changes, cancellations, refunds, and verified guest reviews (`bookingmodification.eth`, `hotelreview.eth`).
 
