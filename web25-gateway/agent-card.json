@@ -1,10 +1,10 @@
 {
-  "name": "BotDesk Hotelroom Gateway",
-  "description": "Platform-neutral Web2.5 M2M routing gateway & ENS taxonomy for autonomous hotel and room bookings (Google A2A compatible).",
-  "url": "https://agentbotdesk.com",
+  "name": "AgentBotDesk Hotelroom Gateway",
+  "description": "Platform-neutral Web2.5 M2M routing gateway & ENS taxonomy for agentic hotel and room bookings (Google A2A compatible).",
+  "url": "https://hotelroom.agentbotdesk.com",
   "version": "1.0.0",
   "provider": {
-    "organization": "BotDesk Hospitality",
+    "organization": "AgentBotDesk Hospitality",
     "url": "https://github.com"
   },
   "capabilities": {
