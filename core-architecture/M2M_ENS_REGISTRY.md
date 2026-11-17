@@ -31,9 +31,9 @@
 * **Inventory Locks & Confirmation:** `bookinglock.eth`, `bookinglocks.eth`, `bookingconfirmation.eth`, `bookingconfirmations.eth`, `bookingstatus.eth`
 * **Escrow, Payments & Billing:** `bookingescrow.eth`, `paymentescrow.eth`, `bookingpayment.eth`, `bookingpayments.eth`, `bookinginvoice.eth`
 
-#### Step 5: Check-In & Room Access (Physical Handover)
+### Step 5: Check-In & Room Access (Physical Handover)
 * **Check-In & Digital Access:** `hotelcheckin.eth`, `roomcheckin.eth`, `roomaccess.eth`
-* **Cooldown / Watchlist Targets (Physical/Digital Keys):** `roomkey.eth`, `roomkeys.eth`
+
 
 #### Step 6: Check-Out & Final Settlement (Completion & Release)
 * **Check-Out & Escrow Release:** `hotelcheckout.eth`, `roomcheckout.eth`
