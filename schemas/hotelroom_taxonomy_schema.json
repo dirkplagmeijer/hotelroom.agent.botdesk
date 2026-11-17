@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org",
   "$id": "https://botdesk.eth",
-  "title": "BotDesk Hospitality M2M Taxonomy Schema",
-  "description": "Standardized 7-step machine-to-machine data model for autonomous hotel and room bookings.",
+  "title": "AgentBotDesk Hospitality M2M Taxonomy Schema",
+  "description": "Standardized 7-step machine-to-machine data model for agentic hotel and room bookings.",
   "type": "object",
   "required": [
     "protocol_version",
